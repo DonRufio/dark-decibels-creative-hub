@@ -4,15 +4,15 @@ import { useToast } from './ui/use-toast';
 
 const images = [
   {
-    url: '/lovable-uploads/05ff8150-6481-4c13-bc0c-d4e5a18b55ae.png',
+    url: '/images/Logo_Skull_sm.png',
     alt: 'Dark Decibel Skull'
   },
   {
-    url: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5',
+    url: '/images/HC1_sm.jpg',
     alt: 'Design Work 1'
   },
   {
-    url: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e',
+    url: '/images/HC1_sm.jpg',
     alt: 'Design Work 2'
   },
 ];

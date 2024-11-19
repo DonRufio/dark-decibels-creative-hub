@@ -10,17 +10,17 @@ import {
 const portfolioItems = [
   {
     title: 'Logo Design',
-    image: '/lovable-uploads/431374db-881d-4b82-af38-1c7963d02d6c.png',
+    image: '/images/Logo_Skull_sm.png',
     description: 'Custom logo design for Dark Decibel'
   },
   {
     title: 'Brand Identity',
-    image: '/lovable-uploads/623e11f8-51e0-484d-808c-79299edcaae1.png',
+    image: '/images/DD_Logo1.png',
     description: 'Complete brand identity package'
   },
   {
     title: 'Print Design',
-    image: '/lovable-uploads/d5ec8c3b-e770-411e-966a-9266cf4e8c90.png',
+    image: '/images/DD_Logo2.png',
     description: 'High-quality print materials'
   }
 ];
