@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
   {
-    url: '/lovable-uploads/d5ec8c3b-e770-411e-966a-9266cf4e8c90.png',
+    url: '/lovable-uploads/05ff8150-6481-4c13-bc0c-d4e5a18b55ae.png',
     alt: 'Dark Decibel Skull'
   },
   {
@@ -52,18 +52,20 @@ const HeroCarousel = () => {
         </div>
       ))}
 
-      <div className="absolute inset-0 flex items-center justify-between px-4">
+      <div className="absolute inset-x-0 top-1/2 flex items-center justify-between px-4 sm:px-6 md:px-8">
         <button
           onClick={prevSlide}
-          className="p-2 rounded-full bg-black bg-opacity-50 text-white hover:bg-opacity-75 transition-all"
+          className="p-2 rounded-full bg-black/50 text-white hover:bg-black/75 transition-all transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary"
+          aria-label="Previous slide"
         >
-          <ChevronLeft size={24} />
+          <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8" />
         </button>
         <button
           onClick={nextSlide}
-          className="p-2 rounded-full bg-black bg-opacity-50 text-white hover:bg-opacity-75 transition-all"
+          className="p-2 rounded-full bg-black/50 text-white hover:bg-black/75 transition-all transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary"
+          aria-label="Next slide"
         >
-          <ChevronRight size={24} />
+          <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
         </button>
       </div>
 

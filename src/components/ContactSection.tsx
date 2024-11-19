@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Eye } from 'lucide-react';
 import { useToast } from '../components/ui/use-toast';
 
 const ContactSection = () => {
   const { toast } = useToast();
+  const [revealEmail, setRevealEmail] = useState(false);
+  const [revealPhone, setRevealPhone] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -27,6 +29,16 @@ const ContactSection = () => {
     }));
   };
 
+  const handleRevealEmail = () => {
+    setRevealEmail(true);
+    console.log('Email revealed');
+  };
+
+  const handleRevealPhone = () => {
+    setRevealPhone(true);
+    console.log('Phone revealed');
+  };
+
   return (
     <section id="contact" className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
@@ -40,7 +52,17 @@ const ContactSection = () => {
               <Mail className="text-primary w-6 h-6" />
               <div>
                 <h3 className="font-semibold text-white">Email</h3>
-                <p className="text-gray-400">contact@darkdecibel.com</p>
+                {revealEmail ? (
+                  <p className="text-gray-400">contact@darkdecibel.com</p>
+                ) : (
+                  <button
+                    onClick={handleRevealEmail}
+                    className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors"
+                  >
+                    <Eye className="w-4 h-4" />
+                    <span>Click to reveal email</span>
+                  </button>
+                )}
               </div>
             </div>
 
@@ -48,7 +70,17 @@ const ContactSection = () => {
               <Phone className="text-primary w-6 h-6" />
               <div>
                 <h3 className="font-semibold text-white">Phone</h3>
-                <p className="text-gray-400">+1 (555) 123-4567</p>
+                {revealPhone ? (
+                  <p className="text-gray-400">+1 (555) 123-4567</p>
+                ) : (
+                  <button
+                    onClick={handleRevealPhone}
+                    className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors"
+                  >
+                    <Eye className="w-4 h-4" />
+                    <span>Click to reveal phone</span>
+                  </button>
+                )}
               </div>
             </div>
 
