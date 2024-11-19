@@ -4,7 +4,7 @@ import { useToast } from './ui/use-toast';
 
 const images = [
   {
-    url: '/images/Logo_Skull_sm.png',
+    url: '/images/HC0_sm.jpg',
     alt: 'Dark Decibel Skull'
   },
   {
@@ -12,7 +12,7 @@ const images = [
     alt: 'Design Work 1'
   },
   {
-    url: '/images/HC1_sm.jpg',
+    url: '/images/HC3_sm.jpg',
     alt: 'Design Work 2'
   },
 ];
