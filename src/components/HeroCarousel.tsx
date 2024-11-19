@@ -3,8 +3,8 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
   {
-    url: '/lovable-uploads/5183f320-4672-4b63-abbd-0ce2eeaeeac7.png',
-    alt: 'Dark Decibel Logo'
+    url: '/lovable-uploads/d5ec8c3b-e770-411e-966a-9266cf4e8c90.png',
+    alt: 'Dark Decibel Skull'
   },
   {
     url: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5',
