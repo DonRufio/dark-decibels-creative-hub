@@ -1,1 +1,5 @@
+# Redirect all routes to index.html for React Router or any SPA
 /*    /index.html   200
+
+# Redirect HTTPS to HTTP (only if the server supports this)
+/*    http://darkdecibeldesigns.com/:splat   301
