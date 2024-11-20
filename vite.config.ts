@@ -18,9 +18,12 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  optimizeDeps: {
+    include: ["@floating-ui/react-dom"],  // Ensure it's included in the development build
+  },
   build: {
     rollupOptions: {
-      external: ["@floating-ui/react-dom"], // Exclude from bundling
+      external: [],  // Do not exclude the package from bundling, include it in the build
     },
   },
 }));
