@@ -30,7 +30,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'   # Match this version with the one you're using locally
+          node-version: '16'   # Match thi s version with the one you're using locally
 
       # Step 3: Install dependencies
       - name: Install dependencies
