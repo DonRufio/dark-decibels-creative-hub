@@ -3,13 +3,12 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
   },
-  base: mode === "production" ? "/dark-decibels-creative-hub/" : "/", // Base path for GitHub Pages
+  base: mode === "production" ? "/dark-decibels-creative-hub/" : "/",
   plugins: [
     react(),
     mode === "development" && componentTagger(),
@@ -17,6 +16,11 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    rollupOptions: {
+      external: ["@floating-ui/react-dom"], // Exclude from bundling
     },
   },
 }));
