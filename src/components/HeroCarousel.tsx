@@ -4,15 +4,15 @@ import { useToast } from './ui/use-toast';
 
 const images = [
   {
-    url: '/images/HC0_sm.jpg',
+    url: `${import.meta.env.BASE_URL}images/HC0_sm.jpg`,
     alt: 'Dark Decibel Skull'
   },
   {
-    url: '/images/HC1_sm.jpg',
+    url: `${import.meta.env.BASE_URL}images/HC1_sm.jpg`,
     alt: 'Design Work 1'
   },
   {
-    url: '/images/HC3_sm.jpg',
+    url: `${import.meta.env.BASE_URL}images/HC3_sm.jpg`,
     alt: 'Design Work 2'
   },
 ];

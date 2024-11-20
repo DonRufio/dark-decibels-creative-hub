@@ -10,20 +10,21 @@ import {
 const portfolioItems = [
   {
     title: 'Logo Design',
-    image: '/images/Logo_Skull_sm.png',
+    image: `${import.meta.env.BASE_URL}images/Logo_Skull_sm.png`,  // Correct image path with BASE_URL
     description: 'Custom logo design for Dark Decibel'
   },
   {
     title: 'Brand Identity',
-    image: '/images/DD_Logo1.png',
+    image: `${import.meta.env.BASE_URL}images/DD_Logo1.png`,  // Correct image path with BASE_URL
     description: 'Complete brand identity package'
   },
   {
     title: 'Print Design',
-    image: '/images/DD_Logo2.png',
+    image: `${import.meta.env.BASE_URL}images/DD_Logo2.png`,  // Correct image path with BASE_URL
     description: 'High-quality print materials'
   }
 ];
+
 
 const Portfolio = () => {
   return (
