@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => {
-  const base = mode === "production" ? "/dark-decibels-creative-hub/" : "/";
+  const base = mode === "production" ? "/" : "/";
   
   // Log the mode and base path to the console
   console.log(`Vite is running in ${mode} mode`);
