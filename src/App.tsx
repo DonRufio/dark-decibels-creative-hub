@@ -15,7 +15,7 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename={isProduction ? "/dark-decibels-creative-hub/" : "/"}>
+        <BrowserRouter basename={isProduction ? "/" : "/"}>
           <Routes>
             <Route path="/" element={<Index />} />
           </Routes>
